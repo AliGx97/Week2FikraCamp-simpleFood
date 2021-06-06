@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1152px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 80px;
+  box-shadow: 0 1px 5px #ddd;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+
+    .logo {
+      color: #000000;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-left: 30px;
+        a {
+          text-decoration: none;
+          color: #707070;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+main {
+  .container {
+    .typography {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 119px;
+      margin-bottom: 130px;
+      max-width: 530px;
+      h1 {
+        font-size: 26px;
+        font-weight: 500;
+        color: #303036;
+        margin-bottom: 31px;
+      }
+      p {
+        color: #000000;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 300;
+      }
+      a {
+        text-decoration: none;
+        .typography-btn {
+          font-size: 15px;
+          color: white;
+          width: fit-content;
+          background-color: #595c69;
+          padding: 18px 35px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.first-sec {
+  position: relative;
+  height: 770px;
+  .container {
+    position: relative;
+    .cards {
+      //   display: grid;
+      //   grid-template-columns: repeat(auto-fill, minmax(300px, 360px));
+      //   grid-gap: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        width: 360px;
+        height: 660px;
+        .card-img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+        .card-desc {
+          margin-top: 30px;
+          .card-title {
+            color: #9fa1aa;
+            font-size: 12px;
+            margin-bottom: 12px;
+          }
+          .card-heading {
+            font-size: 18px;
+            margin-bottom: 16px;
+            font-weight: 400;
+          }
+          .desc {
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .back-color-sec1 {
+    position: absolute;
+    top: 60px;
+    background-color: #fff8f2;
+    height: 710px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+.second-sec {
+  margin-top: 133px;
+  .container {
+    .second-sec-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      font-family: "Montserrat", sans-serif;
+      h1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #303036;
+      }
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #595c69;
+        span {
+          margin-left: 3px;
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        width: 360px;
+        height: 660px;
+        margin-bottom: 100px;
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+        .card-desc {
+          margin-top: 30px;
+
+          .recipe-section {
+            color: #9fa1aa;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 12px;
+          }
+          .recipe-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 16px;
+          }
+          .recipe-time {
+            color: #303036;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 25;
+            span {
+              margin: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.third-section {
+  height: 300px;
+  background-color: #fff8f2;
+  margin-bottom: 150px;
+  .container {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .subscribe {
+      max-width: 560px;
+      h1 {
+        color: #303036;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .subscribe-desc {
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 50;
+        line-height: 30px;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    .subscribe-btn {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
+      background-color: #ffbf9d;
+      padding: 18px 47px;
+      border-radius: 5px;
+    }
+  }
+}
+.fourth-section {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 150px;
+  height: 500px;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      border-radius: 5px;
+    }
+    .learn-more-desc {
+      max-width: 672px;
+      .hi {
+        color: #303036;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .creator {
+        color: #9fa1aa;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 32px;
+      }
+      .creator-desc {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 300;
+        margin-bottom: 32px;
+      }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #595c69;
+        padding: 19px 67px;
+        border-radius: 5px;
+        width: fit-content;
+        // .creator-btn { didn't work like above
+        //   color: #ffffff;
+        //   background-color: #595c69;
+        //   padding: 19px 67px;
+        //   border-radius: 5px;
+        //   width: fit-content;
+        // }
+      }
+    }
+  }
+}
+footer {
+  height: 100px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    color: #9fa1aa;
+    font-size: 13px;
+    font-weight: 500;
+    a {
+      text-decoration: none;
+      color: #9fa1aa;
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+}
